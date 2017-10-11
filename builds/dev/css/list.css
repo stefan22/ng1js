@@ -1,0 +1,90 @@
+.wrapper {
+   width:980px;
+   margin:0 auto;
+   padding:20px;
+   background:#eff0f0;
+}
+
+header {
+   border:1px solid brown;
+   padding:15px;
+}
+
+.main {
+   margin-top:1em;
+   min-height:550px;
+}
+
+.user {
+   padding:10px;
+}
+
+.info h2 {
+   margin:.25em 0;
+   font-size:1em;
+}
+
+#listpg {
+   border: 1px solid #e3c5b0;
+   background-color: #eee8d6;
+   width: 16%;
+   border-radius: 4px;
+   text-align: center;
+   
+}
+
+#listpg a {
+   text-decoration: none;
+   background: #fff;
+   padding: 3px 8px;
+   border: 1px solid #d0c6a9;
+   border-radius: 4px;
+   margin-bottom: 5px;
+   display: inline-block;
+   box-shadow: 0px 1px 0px 0px #cac3b0;
+   color: palevioletred;
+}
+
+#listpg a:before {
+   content:'« ';
+   font-size:22px;
+   
+}
+
+
+
+
+#listpg h6 {
+   color:#be4021;
+   text-transform: capitalize;
+   padding:3px 5px;
+   letter-spacing: 1px;
+   
+}
+
+a.userlink {
+   padding: 0px 0px;
+   background: white;
+   width: 90px;
+   text-align: center;
+   box-shadow: 0px 1px 1px 0px black;
+   
+}
+
+.arrows {
+   width:8%;
+   margin:0 auto;
+   padding: 0 5px;
+}
+
+
+userinfo.ng-enter.ng-active,
+userinfo.ng-leave {
+   opacity:1;
+   height:80px;
+   overflow:hidden;
+}
+
+
+
+
