@@ -4,5 +4,5 @@
 - $routeParams    => controller details partial
 - $routeProvider  => as part of app.config
 - #!              => in case your version of angular does url encoding
-                     'different'
+                     'differently'
 - #!              => (page back)
