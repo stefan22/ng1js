@@ -1,56 +1,45 @@
 [
   {
-    "name":"Barot Bellingham",
-    "imagepath":"Barot_Bellingham",
-    "school":"Royal Academy of Painting and Sculpture",
-    "bio":"Barot has just finished his final year at The Royal Academy of Painting and Sculpture, where he excelled in glass etching paintings and portraiture. Hailed as one of the most diverse artists of his generation"
+    "name":"James Sambrosio",
+    "imagepath":"JamesSambrosio",
+    "school":"Harvard",
+    "he said what":"It doesn't amount to a hill of beans",
+    "meaning":"In the South, a hill of beans is its own measuring stick. Whether you’re talking about volume or value, a hill of beans isn’t worth much. That means whatever you’re talking about is worth less than very little."
   },
   {
-    "name":"Jonathan G. Ferrar II",
-    "imagepath":"Jonathan_Ferrar",
-    "school":"San Fran School of Lit",
-    "bio":"The Artist to Watch in 2012 by the London Review, Johnathan has already sold one of the highest priced-commissions paid to an art student, ever on record."
+    "name":"Matt Le Blanc",
+    "imagepath":"MattLeBlanc",
+    "school":"Kyoto",
+    "he said what":"She was madder than a wet hen",
+    "meaning":"Have you ever seen a wet hen? If so, you know that being madder than a wet hen is very mad indeed."
   },
   {
-    "name":"Hillary Hewitt Goldwynn-Post",
-    "imagepath":"Hillary_Goldwynn",
-    "school":"New York University",
-    "bio":"Hillary is a sophomore art sculpture student at New York University, and has already won all the major international prizes for new sculptors, including the Divinity Circle."
+    "name":"James Hetfield",
+    "imagepath":"JamesHetfield",
+    "school":"Stanford",
+    "he said what":"Way over yonder",
+    "meaning":"When you’re in the South, “over yonder” is a distant direction—any direction. The phrase may be accompanied by a gesture indicating north, south, east, or west. Over yonder down the road. Over yonder past the cotton field. Over yonder toward the water tower."
   },
   {
-    "name":"Hassum Harrod",
-    "imagepath":"Hassum_Harrod",
-    "school":"Art College in New Dehli",
-    "bio":"The Art College in New Dehli has sponsored Hassum on scholarship for his entire undergraduate career at the university, seeing great promise in his contemporary paintings of landscapes."
+    "name":"John Dowknow",
+    "imagepath":"JohnDowknow",
+    "school":"East Bay",
+    "he said what":"Too big for his britches",
+    "meaning":"Unarguable Southern criticism. Translated, it means, “He sure does think a lot of himself.” If you hear this one, you should probably pause a moment. Southerners tell it like it is—no matter what it is—so think of this as a learning moment."
   },
   {
-    "name":"Jennifer Jerome",
-    "imagepath":"Jennifer_Jerome",
-    "school":"New Orleans, LA",
-    "bio":"A native of New Orleans, much of Jennifer's work has centered around abstract images that depict flooding and rebuilding, having grown up as a teenager in the post-flood years."
+    "name":"Tom Petty",
+    "imagepath":"TomPetty",
+    "school":"Ventura Blvd",
+    "he said what":"If I had my druthers",
+    "meaning":"Druthers roughly translates to “I would rather,” meaning, “If had things my way…” The phrase is celebrated in song in the hilarious, Southern-inspired Broadway musical Li’l Abner, in which the title character sings “If I had my druthers, I'd druther have my druthers than anything else I know.” And really, wouldn’t we all druther have our druthers?"
   },
   {
-    "name":"LaVonne L. LaRue",
-    "imagepath":"LaVonne_LaRue",
-    "school":"Chicago, IL",
-    "bio":"LaVonne's giant-sized paintings all around Chicago tell the story of love, nature, and conservation - themes that are central to her heart. LaVonne will share her love and skill of graffiti art."
-  },
-  {
-    "name":"Constance Olivia Smith",
-    "imagepath":"Constance_Smith",
-    "school":"Fullerton-Brighton-Norwell Award",
-    "bio":"Constance received the Fullerton-Brighton-Norwell Award for Modern Art for her mixed-media image of a tree of life, with jewel-adorned branches depicting the arms of humanity, and precious gemstone-decorated leaves representing the spouting buds of togetherness."
-  },
-  {
-    "name":"Riley Rudolph Rewington",
-    "imagepath":"Riley_Rewington",
-    "school":"Roux Academy of Art, Media, and Design",
-    "bio":"A first-year student at the Roux Academy of Art, Media, and Design, Riley is already changing the face of modern art at the university. Riley's exquisite abstract pieces have no intention of ever being understood."
-  },
-  {
-    "name":"Xhou Ta",
-    "imagepath":"Xhou_Ta",
-    "school":"China International Art University",
-    "bio":"A senior at the China International Art University, Xhou has become well-known for his miniature sculptures, often the size of a rice granule, that are displayed by rear projection of microscope images on canvas."
+    "name":"Last Guy",
+    "imagepath":"LastGuy",
+    "school":"Hard knocks",
+    "he said what":"Full as a tick",
+    "meaning":"If you’ve just had a big Southern lunch, complete with cornbread, collard greens, and pecan pie, you’re definitely full as a tick. It’s a vivid phrase, and it’s an accurate one too."
   }
+ 
 ]

@@ -1,12 +1,11 @@
 .wrapper {
    width:980px;
    margin:0 auto;
-   padding:20px;
    background:#eff0f0;
 }
 
 header {
-   border:1px solid brown;
+   background: gray;
    padding:15px;
 }
 
@@ -19,9 +18,121 @@ header {
    padding:10px;
 }
 
+/* users list */
+
+.listwrap {
+   margin:0 20px;
+}
+
+.userlist {
+  background: #EEE8D5;
+  width: 100%;
+  min-width: 300px;
+  margin:0 auto;
+  display:inline-block;
+  border-radius: 0 0 20px 20px;
+  -webkit-transition:all .3s ease-out;
+  -o-transition:all .3s ease-out;
+  -ms-transition:all .3s ease-out;
+  -moz-transition:all .3s ease-out;
+  transition:all .3s ease-out;
+}
+
+.userlist ul {
+  margin: 0;
+  padding: 0;
+  background: #FDF6E3;
+}
+
+.userlist li {
+  margin: 0;
+  padding: 10px 10px 0 10px;
+  border-bottom: 1px dotted black;
+}
+
+.userlist a {
+  display: block;
+  text-decoration: none;
+}
+
+.userlist li:hover {
+  background: #FDF6E3;
+}
+
+/*.userlist:hover {
+  opacity:1;
+  transform:scale(1.2);
+}*/
+
+.user img {
+  display: block;
+  width: 90px;
+  
+}
+
+.user info {
+  display: block;
+  float: left;
+  padding-left: 120px !important;
+}
+
+.user:last-child {
+  border-bottom:none;
+}
+
+.userinfo {
+  font-size: 1.1em;
+  line-height: 160%;
+  background: #EEE8D5;
+  color: #0F4150;
+  width: 90%;
+  min-width: 320px;
+  max-width: 620px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 20px 30px;
+  border-radius: 10px;
+  
+ 
+  
+}
+
+
+.userinfo h1{
+  font-size: 1.8em;
+  margin-bottom: 0;
+}
+
+.userinfo img {
+  width: 40%;
+  max-width: 130px;
+  border-radius: 20px;
+}
+
+.userinfo .btn {
+
+}
+
+.fr {
+  float:right;
+  width:60%;  
+}
+
+.userinfo img.imgfr {
+  width:50%;
+  max-width:175px;
+}
+
+.info.fr h2 {
+  margin-top:.5em;
+}
+
+
+
 .info h2 {
    margin:.25em 0;
-   font-size:1em;
+   display:inline-block;
 }
 
 #listpg {
@@ -36,7 +147,7 @@ header {
 #listpg a {
    text-decoration: none;
    background: #fff;
-   padding: 3px 8px;
+   padding: 3px 15px;
    border: 1px solid #d0c6a9;
    border-radius: 4px;
    margin-bottom: 5px;
@@ -48,6 +159,7 @@ header {
 #listpg a:before {
    content:'« ';
    font-size:22px;
+   margin-right:3px;
    
 }
 
@@ -62,12 +174,17 @@ header {
    
 }
 
+#listpg h6 span {
+  color:#333;
+}
+
 a.userlink {
-   padding: 0px 0px;
    background: white;
    width: 90px;
    text-align: center;
-   box-shadow: 0px 1px 1px 0px black;
+   box-shadow: 0px 1px 1px 1px rgb(128, 128, 126);
+   border-radius: 4px;
+   padding: 5px 7px;
    
 }
 
@@ -85,6 +202,8 @@ userinfo.ng-leave {
    overflow:hidden;
 }
 
-
-
+/* maincontent */
+.maincontent {
+  margin:2em 0;
+}
 

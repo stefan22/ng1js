@@ -1,17 +1,17 @@
-<section>
-   <div id="listpg">
-     <h6>partial: list.html</h6>
-   </div>     
+<section class="listwrap">
+   <section id="listpg">
+      <h6>partial: <span>{{page}}</span></h6>
+   </section>      
    <div class="main">
       <div class="userlist" ng-repeat="user in users">
          <div class="user cf">
-            <img ng-src="{{user.avatar_url}}" />
+            <img ng-src="images/{{user.imagepath}}.png" />
             <div class="info">
-               <h2>{{user.login}}</h2>
-               <h3>{{user.url}}</h3>
-               <p>{{}}</p>
+               <h2>{{user.name}}</h2>
+               <h3>{{user.school}}</h3>
+               <p>{{user["he said what"]}}</p>
             </div><!--/. endof .user -->
-            <a class="userlink" href="#!/details/{{users.indexOf(user)}}">see more..</a>
+            <a class="userlink" href="#!/details/{{users.indexOf(user)}}">Come again?</a>
          </div>
       </div>
       <!--/. endof .userlist -->

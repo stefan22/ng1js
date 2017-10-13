@@ -8,30 +8,17 @@
   <link rel="stylesheet" type="text/css" href="css/reset.css">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" type="text/css" href="css/list.css">
-  
-<!-- <script type="text/javascript">
-  // function handler(res) {
-  //   var meta = res.meta;
-  //   var data = res.data;
-  //   console.log(meta);
-  //   console.log(data);
-  // }
-  // var script = document.createElement('script');
-  // script.src = 'https://api.github.com?callback=handler';
-  // document.getElementsByTagName('head')[0].
-  // appendChild(script);
-</script>    -->
-
 </head>
 <body>
 <div class="wrapper">
-  <header ng-view>
+  
+  <header>
     <!-- ListController -->
-   
+    header
     
   </header>
   
-  <div class="maincontent">
+  <div class="maincontent" ng-view>
     
     
     
@@ -40,7 +27,7 @@
   <!--/. endof .maincontent -->  
 
   <footer class="mainfooter">
-      
+      footer
     
     
     

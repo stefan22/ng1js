@@ -1,16 +1,12 @@
 <section>
    <div id="listpg">
-     <h6>partial: details.html</h6>
-     <a href="/#!list">back-to-list</a>
+     <h6>partial: <span>{{page}}</span></h6>
+     <a href="/#!list">Back</a>
    </div>
-   <div class="arrows">
-      <a href="/#!details/{{prevUser}}" class="btn btn-left">&lt;</a>  
-      <a href="#!/details/{{nextUser}}" class="btn btn-right">&gt;</a>  
-   </div>
-   <!--/. endof arrows -->
+   
    <div class="main">
          <div class="userinfo">
-            <img class="imgfr" ng-src="images/{{users[whichUser].imagepath}}_tn.jpg" />
+            <img class="imgfr" ng-src="images/{{users[whichUser].imagepath}}.png" />
             <div class="info fr">
                <h2>{{users[whichUser].name}}</h2>
                <h3>{{users[whichUser].school}}</h3>
@@ -18,6 +14,11 @@
             </div><!--/. endof .user -->
             
          </div>
+         <div class="arrows">
+         <a href="/#!details/{{prevUser}}" class="btn btn-left">&lt;</a>  
+         <a href="#!/details/{{nextUser}}" class="btn btn-right">&gt;</a>  
+   </div>
+   <!--/. endof arrows -->
    </div>
    <!--/. endof .main -->
 </section>
