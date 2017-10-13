@@ -117,7 +117,7 @@ a.small {
 }
 
 .btn:hover {
-    background: #09576D;
+    background: #be4936;
 }
 
 .search label {
@@ -159,16 +159,24 @@ a.small {
 }
 
 footer {
-  margin-top:6em;
+  margin-top:7em;
   
+}
+
+footer p {
+  margin: 0;
+  color: #fff;
+  padding: 0 15px;
 }
 
 footer.mainfooter {
   height: 96px;
   background-color: #333;
   color: #fff;
-  padding: 10px 20px;
+  padding: 1em 3em;
 }
+
+
 
 
 

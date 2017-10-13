@@ -6,11 +6,18 @@
 
 header {
    background: gray;
-   padding:15px;
+   padding:1em 3em;
+}
+
+header p {
+  margin:0 15px;
+  color:#fff;  
 }
 
 .main {
-   min-height:550px;
+   min-height:575px;
+   margin-bottom: 7em;
+  
 }
 
 .user {
@@ -25,9 +32,9 @@ header {
 
 .userlist {
   background: #EEE8D5;
-  width: 100%;
+  width: 41%;
   min-width: 300px;
-  margin:0 auto;
+  margin: 0 2em 0;
   display:inline-block;
   border-radius: 0 0 20px 20px;
   -webkit-transition:all .3s ease-out;
@@ -85,13 +92,10 @@ header {
   background: #EEE8D5;
   color: #0F4150;
   min-width: 320px;
-  max-width: 80%;
-  margin: 0 auto;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  padding:1em 1em 2em 1em;
-  border-radius: 10px;
+  margin: 30px auto 30px;
+  padding:2em 3em;
   height: 262px;
+  border:1px solid #e3c5b0;
   
  
   
@@ -123,46 +127,64 @@ header {
   max-width:175px;
 }
 
-.info.fr h2 {
+/*.info.fr h2 {
   margin-top:.5em;
-}
-
-
+}*/
 
 .info h2 {
-   margin:.25em 0;
+   margin:.45em 0 .3em 0;
    display:inline-block;
+}
+
+.info h3 {
+  margin:.3em 0;
 }
 
 #listpg {
    border: 1px solid #e3c5b0;
    background-color: #eee8d6;
-   width: 16%;
    border-radius: 4px;
-   text-align: center;
+   margin:0;
+   width: 100%;
    
+}
+
+#listpg.list {
+  margin-bottom:30px;
+}
+
+.listcontent {
+  border: 1px solid #e3c5b0;
+  padding: 2em 3em;
+  background: #EEE8D5;
+  
 }
 
 #listpg a {
    text-decoration: none;
-   background: #fff;
-   padding: 3px 15px;
-   border: 1px solid #d0c6a9;
-   border-radius: 4px;
-   margin-bottom: 5px;
    display: inline-block;
-   box-shadow: 0px 1px 0px 0px #cac3b0;
-   color: palevioletred;
+   color: #be4935;
+   letter-spacing: 1px;
+  
+}
+
+#listpg p {
+   margin:0;
+   display: inline-block;
+   width: 48%;
+   margin-left: 10px;
 }
 
 #listpg a:before {
    content:'« ';
    font-size:22px;
-   margin-right:3px;
+   
    
 }
 
-
+#listpg.list h6 {
+  text-align:left;
+}
 
 
 #listpg h6 {
@@ -170,12 +192,16 @@ header {
    text-transform: capitalize;
    padding:3px 5px;
    letter-spacing: 1px;
+   text-align: right;
+   display: inline-block;
+   width: 49%;
    
 }
 
 #listpg h6 span {
   color:#333;
 }
+
 
 a.userlink {
    background: white;
@@ -188,7 +214,7 @@ a.userlink {
 }
 
 .arrows {
-   width:8%;
+   width:11.5%;
    margin:0 auto;
    padding: 0 5px;
 }
@@ -201,8 +227,20 @@ userinfo.ng-leave {
    overflow:hidden;
 }
 
+
+/*btn*/
+
+.btn {
+  width: 22px;
+}
+
+
 /* maincontent */
 .maincontent {
   margin:2em 0;
+}
+
+.maincontent section {
+  margin:0 3em;
 }
 
