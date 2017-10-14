@@ -70,16 +70,12 @@ a.small {
 /* Search Styles */
 
 .search {
-  background: #063642;
   color: #EEE8D5;
-  width: 90%;
-  min-width: 320px;
-  max-width: 500px;
   margin: 0 auto;
-  margin-top: 30px;
-  border-radius: 20px;
-  padding: 20px 30px;
-  z-index: 20;
+  border-radius: 5px;
+  padding: 10px 30px;
+  border: 1px solid #dccea0;
+  box-shadow: inset 0 0 2px #c9c1a7;
 }
 
 .search h1 {
@@ -120,43 +116,26 @@ a.small {
     background: #be4936;
 }
 
-.search label {
-  display: none;
+label.btn {
+  padding: 3px 15px;
+  margin-right: 5px;
+  letter-spacing: 1px;
+  width:60px;
 }
 
-.search input {
-  font-family: 'Droid Sans', sans-serif;
-  width: 100%;
-  padding: 10px 0 10px 15px;
-  font-size: 1rem;
-  color: #475B62;
-  background: rgba(255,255,255,0.4);
-  border: 1px solid rgba(255,255,255,0.2);
-  border-radius: 10px;
-  outline: 0;
+input.search {
+  color: #808080;
+  margin: 0 auto;
+  border-radius: 4px;
+  padding: 7px 24px;
+  border: 1px solid #dccea0;
+  margin: 5px 5px 5px 7px;
+  font-size:14px;
 }
 
-.search .formgroup input {
-  border: 1px solid rgba(0,0,0,0.3);
-  display: inline;
-  width: auto;
-}
 
-.search label.formgroup {
-  display: inline;
-  width: auto;
-}
 
-.search select {
-  display: inline;
-  padding: 10px 0 10px 15px;
-  font-size: 1rem;
-  color: #475B62;
-  background: rgba(255,255,255,0.4);
-  border: 1px solid rgba(0,0,0,0.3);
-  border-radius: 10px;
-  outline: 0;
-}
+
 
 footer {
   margin-top:7em;

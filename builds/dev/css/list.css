@@ -184,6 +184,7 @@ header p {
 
 #listpg.list h6 {
   text-align:left;
+  margin-left:10px;
 }
 
 
@@ -243,4 +244,17 @@ userinfo.ng-leave {
 .maincontent section {
   margin:0 3em;
 }
+
+
+.saidwhat {
+  margin: 1em;
+  color: darkgray;
+  display:block;
+}
+
+
+
+
+
+
 
