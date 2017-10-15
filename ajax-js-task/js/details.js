@@ -11,17 +11,23 @@
       var whichDetail = e.target.className;
       //page detail
       if(whichDetail.indexOf(1) > -1) {
-         page = 1;
+         console.log(whichDetail);
+         page = 0;
       } else if(whichDetail.indexOf(2) > -1) {
-         page = 2;
+         console.log(whichDetail);
+         page = 1;
       } else if(whichDetail.indexOf(3) > -1) {
-         page = 3;
+         console.log(whichDetail);
+         page = 2;
       } else if(whichDetail.indexOf(4) > -1) {
-         page = 4;
+         console.log(whichDetail);
+         page = 3;
       } else if(whichDetail.indexOf(5) > -1) {
-         page = 5;
+         console.log(whichDetail);
+         page = 4;
       } else if(whichDetail.indexOf(6) > -1) {
-         page = 6;
+         console.log(whichDetail);
+         page = 5;
       }
       
       var xhr = new XMLHttpRequest();

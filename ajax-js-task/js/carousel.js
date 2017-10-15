@@ -1,41 +1,56 @@
-$(document).ready(function(){
+(function(global) {
 
-	function scrollLeft(evt) {
-		evt.preventDefault();
-		evt.stopPropagation();
-		evt.stopImmediatePropagation();
+//carousel	
+var slideIndex = 1;
+	
+function plusSlides(n) {
+	showSlides(slideIndex += n);
+}	
 
-		if (position > 0) {
-			position = Math.max(0,position - 250);
+function currentSlide(n) {
+	showSlides(slideIndex = n);
+}
+	
+function showSlides(n) {
+	var i;
+	var slides = document.querySelectorAll('.items')[0].children;
+		
+	for(var i=0; i < slides.length; i++) {
+		if(n < 1) {
+			slides[slideIndex = slides.length-2].style.display= 'inline-block';
+			slides[slideIndex = slides.length-1].style.display = 'inline-block';	
 		}
-
-		$items.css({ left: (-position) + "px" });
-	}
-
-	function scrollRight(evt){
-		evt.preventDefault();
-		evt.stopPropagation();
-		evt.stopImmediatePropagation();
-
-		if (position < maxPosition) {
-			position = Math.min(maxPosition,position + 250);
+		
+		else if(n >= slides.length) {
+			slides[slideIndex = 0].style.display = 'inline-block';
+			slides[slideIndex = 1].style.display= 'inline-block';	
 		}
-
-		$items.css({ left: (-position) + "px" });
+		slides[i].style.display = 'none';	
 	}
+	
+	slides[slideIndex].style.display= 'inline-block';
+	slides[slideIndex-1].style.display = 'inline-block';
+	
+}
 
-	var $content = $("[rel=js-carousel] > [rel=js-content]");
-	var $items = $content.children("[rel=js-items]");
-	var $left = $("[rel=js-carousel] > [rel=js-controls] > [rel=js-left]");
-	var $right = $("[rel=js-carousel] > [rel=js-controls] > [rel=js-right]");
+//click event
+document.getElementById('carousel')
+.addEventListener('click', function(e) {
+	//console.log(e);
+	if(e.target.tagName == 'BUTTON' && e.target.className == 'right') {
+		//console.log('right');
+		plusSlides(1);
+					
+	}//right
+	else if(e.target.tagName == 'BUTTON' && e.target.className == 'left') {
+		//console.log('left');
+		plusSlides(-1);
+			
+	}//left
+		
+},false);//carousel right/left events
+	
 
 
-	var contentWidth = $content.width();
-	var itemsWidth = $items.width();
-	var position = 0;
-	var maxPosition = (itemsWidth - contentWidth);
-
-	$left.on('click', scrollLeft);
-	$right.on('click', scrollRight);
-
-});
+	
+})(window);
