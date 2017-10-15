@@ -6,14 +6,14 @@ We will break this exercise into four tasks.
 
 **Note:** The Ajax calls in this exercise will only work over `file://...` protocol if you're in Firefox. If you're using Chrome or IE, you'll need to run a local fileserver (like python's `SimpleHTTPServer`, Apache, IIS, etc) in the coding challenge directory, and load it into the browser using `http://localhost...` instead.
 
-## Task 1
+## Task 1 .   done :boom:
 
 1. Open "header.js". In this file, you will attach event handlers for the header links. Use a jQuery "document-ready" event handler.
 2. When the links are clicked, it should use Ajax to fetch the contents of the file referenced by the link's `href`, and load that content into the `#modal` element.
 3. Finally, make the modal visible.
 4. No other interaction is necessary, for now. We'll revisit the header links in Task #4.
 
-## Task 2
+## Task 2 .   done :boom:
 
 1. Open "carousel.js" and "details.js". In these files, you will attach event handlers as noted by the code comments.
 2. In "carousel.js", you just need to add event handlers for the left and right carousel buttons.
