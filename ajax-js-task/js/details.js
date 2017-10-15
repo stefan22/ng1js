@@ -1,4 +1,4 @@
-$(document).ready(function(){
+(function(global) {
    //items & content
 	var items = document.querySelectorAll('.items')[0];
    var con = document.querySelector('#details .content');
@@ -55,8 +55,4 @@ $(document).ready(function(){
 	// clicked, and load those contents into the `$content` div.
 
 	// hint: you will probably want to use "event propagation"
-	// (aka "event delegation"), by attaching a single event
-	// handler the `$content` element rather than individual
-	// event handlers to each item in the carousel.
-
-});   
+})(window);	

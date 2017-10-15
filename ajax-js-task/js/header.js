@@ -1,4 +1,4 @@
-$(document).ready(function() {
+(function(global) {  
    //reg & log
    var reg = document.querySelector('.controls a');
    var log = document.querySelectorAll('.controls')[0].children[1];
@@ -73,4 +73,4 @@ $(document).ready(function() {
    
    
    
-});//doc ready fn
+})(window);

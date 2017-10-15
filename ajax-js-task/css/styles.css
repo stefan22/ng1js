@@ -53,7 +53,8 @@ header > .controls > a {
 
 #carousel > .content {
 	position: relative;
-	width: 100%;
+	width: 72%;
+	margin:0 auto;
 	height: 200px;
 	background-color: #fff;
 	overflow: hidden;
