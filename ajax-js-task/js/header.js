@@ -1,14 +1,10 @@
-(function(global) {  
+var HeaderMod = (function() {  
    //reg & log
    var reg = document.querySelector('.controls a');
    var log = document.querySelectorAll('.controls')[0].children[1];
    
-   //register
-   reg.addEventListener('click', function(e) {
-      //console.log(e);
+   function loadReg(e) {
       e.preventDefault();
-      //console.log('register');
-      
       //load async
       var xhr = new XMLHttpRequest();
       xhr.onreadystatechange = function() {
@@ -30,15 +26,13 @@
       };//onreadystate
       
       xhr.open('GET','register.html', true);
-      xhr.send();
-      
-   },false);//reg
+      xhr.send(); 
+    
+   }//loadReg fn
    
-   //login
-   log.addEventListener('click', function(e) {
+   
+   function loadLog(e) {
       e.preventDefault();
-      //console.log('login');
-      
       //load async
       var xhr = new XMLHttpRequest();
       xhr.onreadystatechange = function() {
@@ -60,17 +54,23 @@
       };//onreadystate
       
       xhr.open('GET','login.html', true);
-      xhr.send();
-      
+      xhr.send(); 
+     
+   }//loadLog fn
+   
+   function init() {
+       console.log('init');
+       reg.addEventListener('click',loadReg, false);
+       log.addEventListener('click', loadLog, false);
+   }//init
+   
+   
+   return {
+       init: init
+   };
+   
 
-      
-   },false); //log
-   
-   
-   
-   
-   
-   
-   
-   
-})(window);
+})();
+
+//HeaderMod
+document.addEventListener('DOMContentLoaded',HeaderMod.init);
