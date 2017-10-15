@@ -1,11 +1,9 @@
-(function(global) {
+var DetailsMod = (function() {
    //items & content
 	var items = document.querySelectorAll('.items')[0];
    var con = document.querySelector('#details .content');
-   //load content
-   items.addEventListener('click', function(e) {
-      //console.log(e);
-      
+   
+   function whichDetail(e) {
       //whichDetail & page
       var page;
       var whichDetail = e.target.className;
@@ -30,35 +28,42 @@
          page = 5;
       }
       
+      loadAsync(page);
+        
+   }//whichDetail fn
+   
+   
+   function loadAsync(page) {
+      //load async
       var xhr = new XMLHttpRequest();
       //debugger;
       xhr.onreadystatechange = function() {
         if(this.readyState == 4 && this.status == 200) {
             var data = this.responseText;
             //console.log(data);
-            con.innerHTML = data;
-         
+            con.innerHTML = data;         
         }//200ok 
      
       };//onreadystate
    
       xhr.open('GET','details/' + String(page) + '.html',true);
       xhr.send(null);
-      
-      
-      
-      
-      
-   },false); //items evt
+        
+   }//loadAsync
    
+   function init() {
+      items.addEventListener('click',whichDetail, false); 
+   }//init   
+   
+   
+   return {
+      init: init   
+   };
 
 
+	
+})();	
 
 
-
-	// on click of a carousel item, do an Ajax request for
-	// the "details/2.html" (or whatever) file for the person
-	// clicked, and load those contents into the `$content` div.
-
-	// hint: you will probably want to use "event propagation"
-})(window);	
+//DetailsMod
+document.addEventListener('DOMContentLoaded', DetailsMod.init);
