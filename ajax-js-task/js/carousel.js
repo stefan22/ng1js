@@ -1,56 +1,41 @@
-(function(global) {
+$(document).ready(function(){
 
-//carousel	
-var slideIndex = 1;
-	
-function plusSlides(n) {
-	showSlides(slideIndex += n);
-}	
+	function scrollLeft(evt) {
+		evt.preventDefault();
+		evt.stopPropagation();
+		evt.stopImmediatePropagation();
 
-function currentSlide(n) {
-	showSlides(slideIndex = n);
-}
-	
-function showSlides(n) {
-	var i;
-	var slides = document.querySelectorAll('.items')[0].children;
-		
-	for(var i=0; i < slides.length; i++) {
-		if(n < 1) {
-			slides[slideIndex = slides.length-2].style.display= 'inline-block';
-			slides[slideIndex = slides.length-1].style.display = 'inline-block';	
+		if (position > 0) {
+			position = Math.max(0,position - 250);
 		}
-		
-		else if(n >= slides.length) {
-			slides[slideIndex = 0].style.display = 'inline-block';
-			slides[slideIndex = 1].style.display= 'inline-block';	
-		}
-		slides[i].style.display = 'none';	
+
+		$items.css({ left: (-position) + "px" });
 	}
-	
-	slides[slideIndex].style.display= 'inline-block';
-	slides[slideIndex-1].style.display = 'inline-block';
-	
-}
 
-//click event
-document.getElementById('carousel')
-.addEventListener('click', function(e) {
-	//console.log(e);
-	if(e.target.tagName == 'BUTTON' && e.target.className == 'right') {
-		//console.log('right');
-		plusSlides(1);
-					
-	}//right
-	else if(e.target.tagName == 'BUTTON' && e.target.className == 'left') {
-		//console.log('left');
-		plusSlides(-1);
-			
-	}//left
-		
-},false);//carousel right/left events
-	
+	function scrollRight(evt){
+		evt.preventDefault();
+		evt.stopPropagation();
+		evt.stopImmediatePropagation();
+
+		if (position < maxPosition) {
+			position = Math.min(maxPosition,position + 250);
+		}
+
+		$items.css({ left: (-position) + "px" });
+	}
+
+	var $content = $("[rel=js-carousel] > [rel=js-content]");
+	var $items = $content.children("[rel=js-items]");
+	var $left = $("[rel=js-carousel] > [rel=js-controls] > [rel=js-left]");
+	var $right = $("[rel=js-carousel] > [rel=js-controls] > [rel=js-right]");
 
 
-	
-})(window);
+	var contentWidth = $content.width();
+	var itemsWidth = $items.width();
+	var position = 0;
+	var maxPosition = (itemsWidth - contentWidth);
+
+	$left.on('click', scrollLeft);
+	$right.on('click', scrollRight);
+
+});
