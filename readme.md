@@ -6,3 +6,13 @@
 - #!/              => in case your version of angular does url encoding differently
                      
 - /#!              => (page back)
+
+
+
+### ref pics
+
+<kbd>ref1</kbd>
+![](builds/dev/images/ajax-stuff.png)
+
+<kbd>ref2</kbd>
+![](builds/dev/images/ng1.png)
