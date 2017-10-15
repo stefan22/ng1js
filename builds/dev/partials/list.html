@@ -2,7 +2,7 @@
    <section id="listpg" class="list">
       <h6>partial: <span>{{page}}</span></h6>
       <label class="btn" name="search">Search:</label>
-         <input type="search" name="search" class="search" ng-model="userq" />
+         <input type="search" name="search" class="search" ng-model="userq" autofocus="true" />
    </section>      
    <div class="main listcontent">
       <div class="userlist" ng-repeat="user in users | filter:userq">
