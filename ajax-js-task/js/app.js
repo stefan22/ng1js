@@ -1,11 +1,13 @@
 document.addEventListener('DOMContentLoaded', function() {
    
+   //event emmitter2
+   window.EVT = new EventEmitter2();
+   
    HeaderMod.init();
    CarouselMod.init();
    DetailsMod.init();
    
-   //currentId value at page load
-   console.log(DetailsMod.pageId());
+
    
    
 });

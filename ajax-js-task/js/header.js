@@ -1,4 +1,4 @@
-var HeaderMod = (function() {  
+var HeaderMod = function() {  
    //reg & log
    var reg = document.querySelector('.controls a');
    var log = document.querySelectorAll('.controls')[0].children[1];
@@ -70,7 +70,7 @@ var HeaderMod = (function() {
    };
    
 
-})();
+}();
 
 //HeaderMod
 document.addEventListener('DOMContentLoaded',HeaderMod.init);

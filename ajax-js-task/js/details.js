@@ -1,4 +1,4 @@
-var DetailsMod = (function() {
+var DetailsMod = function() {
    //items & content
 	var items = document.querySelectorAll('.items')[0];
    var con = document.querySelector('#details .content');
@@ -49,7 +49,7 @@ var DetailsMod = (function() {
       items.addEventListener('click',whichPerson, false); 
    }//init   
    
-   function pgId(page) {
+   function pgId() {
       var currentId = document.location.hash;
       currentId = currentId.substr(currentId.length - 6).charAt(0);
       page = page || currentId;
@@ -60,11 +60,11 @@ var DetailsMod = (function() {
    
    
    return {
-      init: init,
-      pageId: pgId
+      init: init
+     
      
    };
 
 
 	
-})();	
+}();	

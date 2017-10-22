@@ -1,7 +1,7 @@
-var CarouselMod = (function() {
+var CarouselMod = function() {
 	//carousel	
 	var slideIndex = 1;
-	var url;
+	var url, pgId;
 	
 	
 	
@@ -68,6 +68,7 @@ var CarouselMod = (function() {
 		document.getElementById('carousel')
 		.addEventListener('click', getArrow, false);
 		
+		
  	}//init
  
  	return {
@@ -77,7 +78,7 @@ var CarouselMod = (function() {
  	}
 
 
-})(); //CarouselMod
+}(); //CarouselMod
 
 
 

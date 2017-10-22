@@ -1,8 +1,9 @@
-var HeaderMod = (function() {
+var HeaderMod = function() {
   //handler for reg,log
   var reglog = document.querySelector('#page .controls');
   var modal = document.getElementById('modal');
   var url,xhr;
+  
   
   function headclicks() {
     //click evt
@@ -66,4 +67,4 @@ var HeaderMod = (function() {
   }
   
    
-})(); //HeaderModule
+}(); //HeaderModule
