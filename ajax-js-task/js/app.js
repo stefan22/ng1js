@@ -4,5 +4,8 @@ document.addEventListener('DOMContentLoaded', function() {
    CarouselMod.init();
    DetailsMod.init();
    
+   //currentId value at page load
+   console.log(DetailsMod.pageId());
+   
    
 });

@@ -2,7 +2,7 @@ var DetailsMod = (function() {
    //items & content
 	var items = document.querySelectorAll('.items')[0];
    var con = document.querySelector('#details .content');
-   var page, xhr;
+   var page, pgId, xhr;
    
    
    function whichPerson(e) {
@@ -22,13 +22,14 @@ var DetailsMod = (function() {
          page = 5;
       }
       
+      pgId(page);
       //call details
-      loadAsync();
+      loadAsync(page);
         
    }//whichDetail fn
    
    
-   function loadAsync() {
+   function loadAsync(page) {
       //load async
       xhr = new XMLHttpRequest();
       xhr.onreadystatechange = function() {
@@ -39,7 +40,7 @@ var DetailsMod = (function() {
      
       };//onreadystate
    
-      xhr.open('GET','details/' + pgId(page) + '.html',true);
+      xhr.open('GET','details/' + String(page) + '.html',true);
       xhr.send(null);
         
    }//loadAsync
@@ -48,15 +49,19 @@ var DetailsMod = (function() {
       items.addEventListener('click',whichPerson, false); 
    }//init   
    
-   function pgId(id) {
+   function pgId(page) {
+      var currentId = document.location.hash;
+      currentId = currentId.substr(currentId.length - 6).charAt(0);
+      page = page || currentId;
+      console.log(page);
       return page;
    }
-   
   
    
    
    return {
-      init: init
+      init: init,
+      pageId: pgId
      
    };
 

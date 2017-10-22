@@ -4,6 +4,7 @@ var CarouselMod = (function() {
 	var url;
 	
 	
+	
 	function plusSlides(n) {
 		showSlides(slideIndex += n);
 	}	
@@ -59,6 +60,8 @@ var CarouselMod = (function() {
 			
  	}//getPerson fn
  	
+ 	
+ 	
  
  	function init() {
  		//click event
@@ -75,3 +78,7 @@ var CarouselMod = (function() {
 
 
 })(); //CarouselMod
+
+
+
+
