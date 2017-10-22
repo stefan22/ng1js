@@ -21,9 +21,9 @@ We will break this exercise into four tasks.
 4. Whichever carousel item is clicked, you need to pull out the "ID" from the HTML `rel` attribute.
 5. With this "ID", you need to make an Ajax request to load the file `details/{ID}.html` and put its contents into the `$content` div.
 
-## Task 3
+## Task 3 .    done:1&2 :boom:
 
-1. Refactor "header.js", "carousel.js", and "details.js" to use the "module pattern". Each file should expose one module name (`Header`, `Carousel`, and `Details`, respectively).
+1. Refactor "header.js", "carousel.js", and "details.js" to use the "module pattern". Each file should expose one module name (`Header`, `Carousel`, and `Details`, respectively).  
 2. Each module's API should have at a minimum one method called `init()`, which you should wire up to be called by the jQuery "document ready" event.
 3. Refactor so the "click" handling from `Details` is moved into `Carousel`, but keep the Ajax content loading in `Details`.
 4. There should be a public API method on `Details` called `loadPerson(..)` which takes the "ID" and does the Ajax file loading. `Carousel` should have the event handler for clicks on the carousel items wired to call `Details.loadPerson(..)`, passing along the appropriate "ID".
